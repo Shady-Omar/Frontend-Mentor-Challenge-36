@@ -223,6 +223,7 @@ main {
 
     .btn {
         width: 20%;
-        bottom: 50%;
+        bottom: 48%;
+        position: absolute;
     }
 }
