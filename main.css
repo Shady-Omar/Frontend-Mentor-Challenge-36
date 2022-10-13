@@ -36,12 +36,14 @@ main {
 .slide-one img {
     width: 45%;
     box-shadow: rgb(0 0 0 / 30%) -6px 6px 24px;
+    flex: 45%;
 }
 
 .slide-one .text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 55%;
 }
 
 .slide-one .text p {
@@ -82,12 +84,14 @@ main {
 .slide-two img {
     width: 45%;
     box-shadow: rgb(0 0 0 / 30%) -6px 6px 24px;
+    flex: 45%;
 }
 
 .slide-two .text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 55%;
 }
 
 .slide-two .text p {
