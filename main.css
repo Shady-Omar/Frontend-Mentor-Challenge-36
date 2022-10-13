@@ -1,0 +1,224 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden; 
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    background: url(images/pattern-curve.svg) no-repeat left bottom, url(images/pattern-bg.svg) no-repeat fixed right;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    position: relative;
+}
+
+.slide-one {
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: url(images/pattern-quotes.svg) no-repeat top left;
+    background-position-x: 5rem;
+    background-position-y: 3rem;
+    display: none;
+}
+
+.slide-one img {
+    width: 45%;
+    box-shadow: rgb(0 0 0 / 30%) -6px 6px 24px;
+}
+
+.slide-one .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slide-one .text p {
+    color: hsl(240, 38%, 20%);
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 1.5em;
+    width: 110%;
+    margin-bottom: 16px;
+}
+
+.slide-one .text .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slide-one .text .info h1 {
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+
+.slide-one .text .info span {
+    color: hsl(240, 18%, 77%);
+}
+
+.slide-two {
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: url(images/pattern-quotes.svg) no-repeat top left;
+    background-position-x: 5rem;
+    background-position-y: 3rem;
+    display: none;
+}
+
+.slide-two img {
+    width: 45%;
+    box-shadow: rgb(0 0 0 / 30%) -6px 6px 24px;
+}
+
+.slide-two .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slide-two .text p {
+    color: hsl(240, 38%, 20%);
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 1.5em;
+    width: 110%;
+    margin-bottom: 16px;
+}
+
+.slide-two .text .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slide-two .text .info h1 {
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+
+.slide-two .text .info span {
+    color: hsl(240, 18%, 77%);
+}
+
+.btn {
+    border-radius: 2rem;
+    box-shadow: rgb(0 0 0 / 40%) -6px 6px 24px;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 5%;
+    justify-content: space-around;
+    position: sticky;
+    bottom: 15%;
+    background-color: white;
+}
+
+.btn img {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn img:hover {
+    transform: scale(1.2);
+}
+
+.active {
+    display: flex !important; 
+}
+
+@media (max-width: 767px) {
+    body {
+        background: url(images/pattern-curve.svg) no-repeat fixed left bottom, url(images/pattern-bg.svg) no-repeat fixed top;
+        background-size: contain;
+    }
+
+    .slide-one {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(images/pattern-quotes.svg) no-repeat top center;
+        background-position-y: 23rem;
+        display: none;
+    }
+
+    .slide-one img {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .slide-one .text {
+        align-items: center;
+    }
+
+    .slide-one .text p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .slide-one .text .info {
+        flex-direction: column;
+    }
+
+    .slide-one .text .info h1 {
+        margin-right: 0rem;
+        margin-bottom: 5px;
+    }
+
+    .slide-two {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(images/pattern-quotes.svg) no-repeat top center;
+        background-position-y: 23rem;
+        display: none;
+    }
+
+    .slide-two img {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .slide-two .text {
+        align-items: center;
+    }
+
+    .slide-two .text p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .slide-two .text .info {
+        flex-direction: column;
+    }
+
+    .slide-two .text .info h1 {
+        margin-right: 0rem;
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        width: 20%;
+        bottom: 50%;
+    }
+}
